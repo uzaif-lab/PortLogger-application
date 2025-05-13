@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_all_logs">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.yourname.portlogger.ui.fragments.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_all_logs"
+        android:name="com.yourname.portlogger.ui.fragments.AllLogsFragment"
+        android:label="@string/menu_all_logs"
+        tools:layout="@layout/fragment_logs" />
+
+    <fragment
+        android:id="@+id/nav_switch"
+        android:name="com.yourname.portlogger.ui.fragments.PowerLogsFragment"
+        android:label="@string/menu_switch"
+        tools:layout="@layout/fragment_logs" />
+
+    <fragment
+        android:id="@+id/nav_usb"
+        android:name="com.yourname.portlogger.ui.fragments.UsbLogsFragment"
+        android:label="@string/menu_usb"
+        tools:layout="@layout/fragment_logs" />
+
+    <fragment
+        android:id="@+id/nav_sim"
+        android:name="com.yourname.portlogger.ui.fragments.SimLogsFragment"
+        android:label="@string/menu_sim"
+        tools:layout="@layout/fragment_logs" />
+
+    <fragment
+        android:id="@+id/nav_password_setup"
+        android:name="com.yourname.portlogger.ui.fragments.PasswordSetupFragment"
+        android:label="Set Up PIN"
+        tools:layout="@layout/fragment_password_setup">
+        <action
+            android:id="@+id/action_passwordSetup_to_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/nav_password_setup"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.yourname.portlogger.ui.fragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/nav_login"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_permissions"
+        android:name="com.yourname.portlogger.ui.fragments.PermissionsFragment"
+        android:label="Permissions"
+        tools:layout="@layout/fragment_permissions">
+        <action
+            android:id="@+id/action_permissions_to_passwordSetup"
+            app:destination="@id/nav_password_setup"
+            app:popUpTo="@id/nav_permissions"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

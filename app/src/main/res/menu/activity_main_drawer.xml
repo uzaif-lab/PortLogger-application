@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_all_logs"
+            android:icon="@drawable/ic_all_logs"
+            android:title="@string/menu_all_logs" />
+        <item
+            android:id="@+id/nav_switch"
+            android:icon="@drawable/ic_power"
+            android:title="@string/menu_switch" />
+        <item
+            android:id="@+id/nav_usb"
+            android:icon="@drawable/ic_usb"
+            android:title="@string/menu_usb" />
+        <item
+            android:id="@+id/nav_sim"
+            android:icon="@drawable/ic_sim"
+            android:title="@string/menu_sim" />
+    </group>
+</menu>

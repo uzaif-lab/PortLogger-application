@@ -1,0 +1,38 @@
+<!-- res/values/strings.xml -->
+<resources>
+    <!-- Existing strings -->
+    <string name="app_name">Port Logger</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_all_logs">All Logs</string>
+    <string name="menu_switch">Power Logs</string>
+    <string name="menu_usb">USB Logs</string>
+    <string name="menu_sim">SIM Logs</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_port">Port</string>
+    <string name="power_status_icon">Power status icon</string>
+    <string name="no_power_logs">No power logs available</string>
+    <string name="no_logs_available">No logs available</string>
+    <string name="error_pin_length">PIN must be 4 digits</string>
+    <string name="error_incorrect_pin_attempts">Incorrect PIN. %d attempts remaining</string>
+    <string name="error_lockout_time">Too many attempts. Try again in %d seconds</string>
+    <string name="attempts_remaining">%d attempts remaining</string>
+    
+    <!-- Newly added strings -->
+    <string name="service_status_running">Service is running</string>
+    <string name="toggle_on">ON</string>
+    <string name="toggle_off">OFF</string>
+    <string name="active_services">Active Services</string>
+    <string name="power_service_title">Power On/Off Detection</string>
+    <string name="power_service_desc">Logs when device is powered on or off</string>
+    <string name="usb_service_title">USB Connection Monitoring</string>
+    <string name="usb_service_desc">Tracks USB connections and file transfers</string>
+    <string name="sim_service_title">SIM Card Monitoring</string>
+    <string name="sim_service_desc">Detects SIM card insertion and removal</string>
+</resources>
